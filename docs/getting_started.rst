@@ -4,7 +4,7 @@ The ``gax`` library will allow you to connect to the `Google PubSub API`_ and ac
 
 .. _Google PubSub API: https://cloud.google.com/pubsub/
 
-In order to achieve so you need to setup your authentication as well as install the ``gax`` library.
+In order to achieve so you need to setup authentication as well as install the ``gax`` library locally.
 
 Setup Authentication
 ~~~~~~~~~~~~~~~~~~~~
