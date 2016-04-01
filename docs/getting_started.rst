@@ -16,7 +16,7 @@ Once done, you can then run the following command in your terminal:
 
 .. code-block:: console
 
-    $`gcloud auth login`
+    $ gcloud auth login
 
 
 Install Gax Library
