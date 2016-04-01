@@ -1,70 +1,29 @@
 Getting started
 ---------------
+The ``gax`` library will allow you to connect to the `Google PubSub API`_ and access all its methods.
 
-The ``gcloud`` library is ``pip`` install-able:
+.. _Google PubSub API: https://cloud.google.com/pubsub/
 
-.. code-block:: console
+In order to achieve so you need to setup your authentication as well as install the ``gax`` library.
 
-    $ pip install gcloud
-
-If you have trouble installing
-``pycrypto`` or ``pyopenssl``
-(and you're on Ubuntu),
-you can try install the precompiled packages:
-
-.. code-block:: console
-
-    $ sudo apt-get install python-crypto python-openssl
-
-If you want to install everything with ``pip``,
-try installing the ``dev`` packages beforehand:
-
-.. code-block:: console
-
-    $ sudo apt-get install python-dev libssl-dev
-
-If you want to install ``gcloud-python`` from source,
-you can clone the repository from GitHub:
-
-.. code-block:: console
-
-    $ git clone git://github.com/GoogleCloudPlatform/gcloud-python.git
-    $ cd gcloud-python
-    $ python setup.py install
-
-----
-
-Cloud Datastore
+Authentication
 ~~~~~~~~~~~~~~~
+You can authenticate with all your API calls using the `Google Cloud SDK`_. The steps are the following:
 
-`Google Cloud Datastore`_ is a fully managed, schemaless database for storing non-relational data.
+.. _Google Cloud SDK: https://cloud.google.com/sdk/
 
-.. _Google Cloud Datastore: https://developers.google.com/datastore/
+.. code-block:: console
 
-.. code-block:: python
+    Install the SDK by following the instructions at https://cloud.google.com/sdk/
+    Run `gcloud auth login`
 
-  from gcloud import datastore
+Installating Gax Library
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-  client = datastore.Client()
-  key = client.key('Person')
+The ``gax`` library is ``pip`` install-able:
 
-  entity = datastore.Entity(key=key)
-  entity['name'] = 'Your name'
-  entity['age'] = 25
-  client.put(entity)
+.. code-block:: console
 
-Cloud Storage
-~~~~~~~~~~~~~
+    $ sudo pip install gax-google-pubsub-v1
 
-`Google Cloud Storage`_ allows you to store data on Google infrastructure.
-
-.. _Google Cloud Storage: https://developers.google.com/storage/
-
-.. code-block:: python
-
-  from gcloud import storage
-
-  client = storage.Client()
-  bucket = client.get_bucket('<your-bucket-name>')
-  blob = bucket.blob('my-test-file.txt')
-  blob.upload_from_string('this is test content!')
+At this point you are all set to continue.
