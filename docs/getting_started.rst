@@ -6,18 +6,20 @@ The ``gax`` library will allow you to connect to the `Google PubSub API`_ and ac
 
 In order to achieve so you need to setup your authentication as well as install the ``gax`` library.
 
-Authentication
+Setup Authentication
 ~~~~~~~~~~~~~~~
-You can authenticate with all your API calls using the `Google Cloud SDK`_. The steps are the following:
+To authenticate all your API calls, first install and setup the `Google Cloud SDK`_.
 
 .. _Google Cloud SDK: https://cloud.google.com/sdk/
 
+Once done, you can then run the following command in your terminal:
+
 .. code-block:: console
 
-    Install the SDK by following the instructions at https://cloud.google.com/sdk/
-    Run `gcloud auth login`
+    $`gcloud auth login`
 
-Installating Gax Library
+
+Install Gax Library
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``gax`` library is ``pip`` install-able:
