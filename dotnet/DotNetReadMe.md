@@ -15,7 +15,9 @@ This client supports the following Google Cloud Platform services:
 * [Google Cloud Storage](#google-cloud-storage)
 
 > Note: This client is a work-in-progress, and may occasionally
-> make backwards-incompatible changes.
+> make backwards-incompatible changes. The layout of the repository
+> is likely to change, and names (of everything - assemblies,
+> namespaces, types, members...) should be regarded as provisional.
 
 If you need support for other Google APIs, check out the [Google .NET API Client library].
 
