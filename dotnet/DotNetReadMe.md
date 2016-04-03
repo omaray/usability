@@ -18,6 +18,8 @@ This client supports the following Google Cloud Platform services:
 > Note: This client is a work-in-progress, and may occasionally
 > make backwards-incompatible changes.
 
+If you need support for other Google APIs, check out the [Google DotNet API Client library](https://github.com/google/google-api-dotnet-client).
+
 Quickstart
 ----------
 If you are using Maven, add this to your pom.xml file
