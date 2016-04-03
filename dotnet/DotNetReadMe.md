@@ -1,7 +1,6 @@
-Google Cloud DotNet Client
-==========================
+# Google Cloud .NET Client
 
-> DotNet idiomatic client for [Google Cloud Platform](https://cloud.google.com/) services.
+> .NET idiomatic client for [Google Cloud Platform](https://cloud.google.com/) services.
 
 [![Build Status](https://travis-ci.org/GoogleCloudPlatform/gcloud-dotnet.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/gcloud-dotnet)
 [![Coverage Status](https://coveralls.io/repos/GoogleCloudPlatform/gcloud-java/badge.svg?branch=master)](https://coveralls.io/r/GoogleCloudPlatform/gcloud-java?branch=master)
@@ -18,10 +17,10 @@ This client supports the following Google Cloud Platform services:
 > Note: This client is a work-in-progress, and may occasionally
 > make backwards-incompatible changes.
 
-If you need support for other Google APIs, check out the [Google DotNet API Client library](https://github.com/google/google-api-dotnet-client).
+If you need support for other Google APIs, check out the [Google .NET API Client library](https://github.com/google/google-api-dotnet-client).
 
-Quickstart
-----------
+## Quickstart
+
 If you are using Maven, add this to your pom.xml file
 ```xml
 <dependency>
