@@ -21,21 +21,8 @@ If you need support for other Google APIs, check out the [Google .NET API Client
 
 ## Quickstart
 
-If you are using Maven, add this to your pom.xml file
-```xml
-<dependency>
-  <groupId>com.google.gcloud</groupId>
-  <artifactId>gcloud-java</artifactId>
-  <version>0.1.7</version>
-</dependency>
-```
-If you are using Gradle, add this to your dependencies
-```Groovy
-compile 'com.google.gcloud:gcloud-java:0.1.7'
-```
-If you are using SBT, add this to your dependencies
-```Scala
-libraryDependencies += "com.google.gcloud" % "gcloud-java" % "0.1.7"
+```sh
+PM> Install-Package gcloud-dotnet
 ```
 
 Example Applications
