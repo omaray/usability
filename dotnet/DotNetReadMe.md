@@ -12,11 +12,8 @@ Google Cloud DotNet Client
 
 This client supports the following Google Cloud Platform services:
 
--  [Google Cloud BigQuery] (#google-cloud-bigquery-alpha) (Alpha)
--  [Google Cloud Datastore] (#google-cloud-datastore)
--  [Google Cloud DNS] (#google-cloud-dns-alpha) (Alpha)
--  [Google Cloud Resource Manager] (#google-cloud-resource-manager-alpha) (Alpha)
--  [Google Cloud Storage] (#google-cloud-storage)
+* [Google Cloud Pub/Sub](#google-cloud-pubsub)
+* [Google Cloud Storage](#google-cloud-storage)
 
 > Note: This client is a work-in-progress, and may occasionally
 > make backwards-incompatible changes.
