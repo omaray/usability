@@ -7,8 +7,8 @@ Google Cloud DotNet Client
 [![Coverage Status](https://coveralls.io/repos/GoogleCloudPlatform/gcloud-java/badge.svg?branch=master)](https://coveralls.io/r/GoogleCloudPlatform/gcloud-java?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/9da006ad7c3a4fe1abd142e77c003917)](https://www.codacy.com/app/mziccard/gcloud-java)
 
--  [Homepage] (https://cloud.google.com/dotnet/)
--  [API Documentation] (http://jskeet.github.io/gcloud-dotnet/)
+* [Homepage](https://cloud.google.com/dotnet/)
+* [API Documentation](http://jskeet.github.io/gcloud-dotnet/)
 
 This client supports the following Google Cloud Platform services:
 
