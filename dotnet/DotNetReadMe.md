@@ -1,7 +1,7 @@
 Google Cloud DotNet Client
 ==========================
 
-DotNet idiomatic client for [Google Cloud Platform][cloud-platform] services.
+> DotNet idiomatic client for [Google Cloud Platform](https://cloud.google.com/) services.
 
 [![Build Status](https://travis-ci.org/GoogleCloudPlatform/gcloud-dotnet.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/gcloud-dotnet)
 [![Coverage Status](https://coveralls.io/repos/GoogleCloudPlatform/gcloud-java/badge.svg?branch=master)](https://coveralls.io/r/GoogleCloudPlatform/gcloud-java?branch=master)
