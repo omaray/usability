@@ -1,7 +1,7 @@
-Google Cloud Java Client
+Google Cloud DotNet Client
 ==========================
 
-Java idiomatic client for [Google Cloud Platform][cloud-platform] services.
+DotNet idiomatic client for [Google Cloud Platform][cloud-platform] services.
 
 [![Build Status](https://travis-ci.org/GoogleCloudPlatform/gcloud-java.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/gcloud-java)
 [![Coverage Status](https://coveralls.io/repos/GoogleCloudPlatform/gcloud-java/badge.svg?branch=master)](https://coveralls.io/r/GoogleCloudPlatform/gcloud-java?branch=master)
