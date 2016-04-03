@@ -27,6 +27,97 @@ PM> Install-Package gcloud-dotnet
 
 ## Example Applications
 
+## Google Cloud Pub/Sub
+
+- [API Documentation][gcloud-pubsub-docs]
+- [Official Documentation][cloud-pubsub-docs]
+
+#### Preview
+
+```js
+var gcloud = require('gcloud');
+
+// Authenticating on a per-API-basis. You don't need to do this if you
+// auth on a global basis (see Authentication section above).
+
+var pubsub = gcloud.pubsub({
+  projectId: 'my-project',
+  keyFilename: '/path/to/keyfile.json'
+});
+
+// Reference a topic that has been previously created.
+var topic = pubsub.topic('my-topic');
+
+// Publish a message to the topic.
+topic.publish({
+  data: 'New message!'
+}, function(err) {});
+
+// Subscribe to the topic.
+topic.subscribe('new-subscription', function(err, subscription) {
+  // Register listeners to start pulling for messages.
+  function onError(err) {}
+  function onMessage(message) {}
+  subscription.on('error', onError);
+  subscription.on('message', onMessage);
+
+  // Remove listeners to stop pulling for messages.
+  subscription.removeListener('message', onMessage);
+  subscription.removeListener('error', onError);
+});
+```
+
+## Google Cloud Storage
+
+- [API Documentation][gcloud-storage-docs]
+- [Official Documentation][cloud-storage-docs]
+
+#### Preview
+
+```js
+var fs = require('fs');
+var gcloud = require('gcloud');
+
+// Authenticating on a per-API-basis. You don't need to do this if you auth on a
+// global basis (see Authentication section above).
+
+var gcs = gcloud.storage({
+  projectId: 'my-project',
+  keyFilename: '/path/to/keyfile.json'
+});
+
+// Create a new bucket.
+gcs.createBucket('my-new-bucket', function(err, bucket) {
+  if (!err) {
+    // "my-new-bucket" was successfully created.
+  }
+});
+
+// Reference an existing bucket.
+var bucket = gcs.bucket('my-existing-bucket');
+
+// Upload a local file to a new file to be created in your bucket.
+bucket.upload('/photos/zoo/zebra.jpg', function(err, file) {
+  if (!err) {
+    // "zebra.jpg" is now in your bucket.
+  }
+});
+
+// Download a file from your bucket.
+bucket.file('giraffe.jpg').download({
+  destination: '/photos/zoo/giraffe.jpg'
+}, function(err) {});
+
+// Streams are also supported for reading and writing files.
+var remoteReadStream = bucket.file('giraffe.jpg').createReadStream();
+var localWriteStream = fs.createWriteStream('/photos/zoo/giraffe.jpg');
+remoteReadStream.pipe(localWriteStream);
+
+var localReadStream = fs.createReadStream('/photos/zoo/zebra.jpg');
+var remoteWriteStream = bucket.file('zebra.jpg').createWriteStream();
+localReadStream.pipe(remoteWriteStream);
+```
+
 ## Contributing
 
 Contributions to this library are always welcome and highly encouraged.
@@ -49,5 +140,9 @@ Apache 2.0 - See [LICENSE] for more information.
 [Semantic Versioning]: http://semver.org/
 [language-landing-dotnet]: https://cloud.google.com/dotnet/
 [api-reference-dotnet]: http://jskeet.github.io/gcloud-dotnet/
+[gcloud-pubsub-docs]: http://jskeet.github.io/gcloud-dotnet/api/Google.Pubsub.V1.html
+[gcloud-storage-docs]: http://jskeet.github.io/gcloud-dotnet/api/Google.Storage.V1.html
+[cloud-pubsub-docs]: https://cloud.google.com/pubsub/docs
+[cloud-storage-docs]: https://cloud.google.com/storage/docs
 [CONTRIBUTING]:https://github.com/GoogleCloudPlatform/gcloud-dotnet/blob/master/CONTRIBUTING.md
 [LICENSE]: https://github.com/GoogleCloudPlatform/gcloud-dotnet/blob/master/LICENSE
