@@ -29,8 +29,9 @@ PM> Install-Package gcloud-dotnet
 
 ## Example Applications
 
-- [getting-started-dotnet] - A sample and [tutorial] that demonstrates how to build a complete web application using Cloud Datastore, Cloud Storage, and Cloud Pub/Sub and deploy it to Google App Engine or Google Compute Engine.
-- Other Examples...
+* [getting-started-dotnet] - A sample and [tutorial] that demonstrates how to build a complete web application using Cloud Datastore, Cloud Storage, and Cloud Pub/Sub and deploy it to Google App Engine or Google Compute Engine.
+* [demos] - Sample code showing how to use several of the APIs supported by this library.
+* Other Examples...
 
 ## Authentication
 
@@ -81,6 +82,7 @@ Apache 2.0 - See [LICENSE] for more information.
 [Google .NET API Client library]: https://github.com/google/google-api-dotnet-client
 [Semantic Versioning]: http://semver.org/
 [getting-started-dotnet]: https://github.com/GoogleCloudPlatform/getting-started-dotnet
+[demos]: https://github.com/GoogleCloudPlatform/gcloud-dotnet/tree/master/demo
 [language-landing-dotnet]: https://cloud.google.com/dotnet/
 [api-reference-dotnet]: http://jskeet.github.io/gcloud-dotnet/
 [gcloud-pubsub-docs]: http://jskeet.github.io/gcloud-dotnet/api/Google.Pubsub.V1.html
