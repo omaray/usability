@@ -1,6 +1,6 @@
 # Getting Started for .NET
 
-_sample text below of what the description could be mention as well as the client libraries used_
+_sample text below of what the description could be; we also mention the client libraries used_
 
 This repo contains sample applications written in C# that run on Google Cloud Platform.
 
