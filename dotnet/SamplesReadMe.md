@@ -7,11 +7,11 @@ This repo contains sample applications written in C# that run on Google Cloud Pl
 
 ## aspnet (can we call this repo something else than aspnet?)
 
-The [aspnet] directory contains complete examples that you can build and run today. The samples are built on ASP.NET 4.5.2.
+The [aspnet] directory contains ... we should add something that describes what the user will learn in this folder. For instance how to create a bookshelf app running on ASP.NET that uses the following Cloud APIs (mention the APIs).
 
 ## core (can we call this repo something else than core?)
 
-The [core] directory is a work in progress. The samples are build on ASP.NET 5.
+The [core] directory contains... same concept as above where we describe what the folder contains. This needs to let the user know if this is interesting to them or not and if it uses the APIs they care about.
 
 ## Contributing
 
