@@ -1,17 +1,21 @@
 # Getting Started for .NET
 
-This repo contains sample applications written in C# that run on Google Cloud Platform. The applications make use of two client libraries:
+_sample text below of what the description could be mention as well as the client libraries used_
+
+This repo contains sample applications written in C# that run on Google Cloud Platform.
+
+The applications make use of two client libraries:
 
 * [.NET Cloud Client Library]
 * [Google API Client Library]
 
 ## aspnet (can we call this folder something else than aspnet?)
 
-The [aspnet] directory contains ... we should add something that describes what the user will learn in this folder. For instance how to create a bookshelf app running on ASP.NET that uses the following Cloud APIs (mention the APIs).
+The [aspnet] directory contains ... _we should add something that describes what the user will learn in this folder. For instance how to create a bookshelf app running on ASP.NET that uses the following Cloud APIs (mention the APIs)._
 
 ## core (can we call this folder something else than core?)
 
-The [core] directory contains... same concept as above where we describe what the folder contains. This needs to let the user know if this is interesting to them or not and if it uses the APIs they care about.
+The [core] directory contains... _same concept as above where we describe what the folder contains. This needs to let the user know if this is interesting to them or not and if it uses the APIs they care about._
 
 ## Contributing
 
