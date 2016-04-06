@@ -5,11 +5,6 @@ This repo contains sample applications written in C# that run on Google Cloud Pl
 * [.NET Cloud Client Library]
 * [Google API Client Library]
 
-This client supports the following Google Cloud Platform services:
-
-* [Google Cloud Pub/Sub](#google-cloud-pubsub)
-* [Google Cloud Storage](#google-cloud-storage)
-
 ## aspnet (can we call this repo something else than aspnet?)
 
 The [aspnet] directory contains complete examples that you can build and run today. The samples are built on ASP.NET 4.5.2.
