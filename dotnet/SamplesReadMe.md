@@ -5,11 +5,11 @@ This repo contains sample applications written in C# that run on Google Cloud Pl
 * [.NET Cloud Client Library]
 * [Google API Client Library]
 
-## aspnet (can we call this repo something else than aspnet?)
+## aspnet (can we call this folder something else than aspnet?)
 
 The [aspnet] directory contains ... we should add something that describes what the user will learn in this folder. For instance how to create a bookshelf app running on ASP.NET that uses the following Cloud APIs (mention the APIs).
 
-## core (can we call this repo something else than core?)
+## core (can we call this folder something else than core?)
 
 The [core] directory contains... same concept as above where we describe what the folder contains. This needs to let the user know if this is interesting to them or not and if it uses the APIs they care about.
 
