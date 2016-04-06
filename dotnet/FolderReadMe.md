@@ -1,9 +1,9 @@
 # Time Travel
 
-This folder contains an end-to-end sample application written in C# that allows exact time travel. It uses the [Cloud Storage], [Cloud Pub/Sub], and [Cloud TimeTravel] API. 
+This folder contains an end-to-end sample application written in C# that allows exact time travel. It uses the [Cloud Storage], [Cloud Pub/Sub], and [Cloud TimeTravel] API.
 
 ## Client Libraries
-The application make use of the [.NET Cloud Client Library]. 
+This application makes use of the [.NET Cloud Client Library].
 
 ## Tutorial
 For a great end-to-end understanding of all the code in this sample - and to actually do the time traveling as you take the code for a test drive - do follow the [tutorial] on the Google Cloud Site.
