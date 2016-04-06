@@ -11,9 +11,9 @@ For a great end-to-end understanding of all the code in this sample - and to act
 ## Cloud Documentation
 You can find out more about each API by navigating the documentation online:
 
-* Google Cloud Storage[Cloud Storage]
-* Google Cloud Pub/Sub[Cloud Pub/Sub]
-* Google Cloud TimeTravel[Cloud TimeTravel]
+* [Google Cloud Storage][Cloud Storage]
+* [Google Cloud Pub/Sub][Cloud Pub/Sub]
+* [Google Cloud TimeTravel][Cloud TimeTravel]
 
 ## Contributing
 
