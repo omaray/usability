@@ -23,3 +23,14 @@ This client supports the following Google Cloud Platform services at an [Alpha](
 * [Google Cloud Speech](#google-cloud-speech-alpha) (Alpha)
 
 If you need support for other Google APIs, please check out the [Google APIs Client Library for PHP](https://github.com/google/google-api-php-client).
+
+## Quickstart
+In order to use any of our libraries, you first need to take the following steps:
+
+* Select or create a Cloud Platform project.
+* Enable billing for your project.
+* Enable the API you'll want to use (e.g. Vision API or Datastore API).
+* Setup Authentication
+
+Once these steps are done, we recommend you install the individual packages that you need, for instance:
+
