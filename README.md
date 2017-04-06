@@ -30,7 +30,7 @@ In order to use any of our libraries, you first need to take the following steps
 * [Select or create a Cloud Platform project](https://console.cloud.google.com/project).
 * [Enable billing for your project](https://support.google.com/cloud/answer/6293499#enable-billing).
 * [Enable the API you'll want to use](https://console.cloud.google.com/apis/library) (e.g. Vision API or Datastore API).
-* Setup Authentication
+* [Setup Authentication]()
 
 Once these steps are done, we recommend you install the individual packages that you need, for instance:
 
