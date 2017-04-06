@@ -39,7 +39,7 @@ $ composer require google/cloud-vision
 $ composer require google/cloud-datastore
 ```
 
-### The google/cloud meta-package
+#### The google/cloud meta-package
 We also provide a meta-package, `google/cloud`, which provides all of the individual APIs. However, in order to keep file size and memory use low, the use of this package is not recommended.
 
 If you want the kitchen sink, however, get it with:
