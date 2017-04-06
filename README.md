@@ -39,6 +39,8 @@ $ composer require google/cloud-vision
 $ composer require google/cloud-datastore
 ```
 
+From there, you can then start using the client. Please see lower in this page for code examples to get you started.
+
 #### The google/cloud meta-package
 We also provide a meta-package, `google/cloud`, which provides all of the individual APIs. However, in order to keep file size and memory use low, the use of this package is not recommended.
 
