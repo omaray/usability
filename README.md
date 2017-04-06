@@ -24,7 +24,7 @@ This client supports the following Google Cloud Platform services at an [Alpha](
 
 If you need support for other Google APIs, please check out the [Google APIs Client Library for PHP](https://github.com/google/google-api-php-client).
 
-## Quickstart
+## Getting started
 In order to use any of our libraries, you first need to take the following steps:
 
 * [Select or create a Cloud Platform project](https://console.cloud.google.com/project).
