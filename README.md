@@ -49,4 +49,31 @@ If you want the kitchen sink, however, get it with:
 ```sh
 $ composer require google/cloud
 ```
+## Versioning
+
+This library follows [Semantic Versioning](http://semver.org/).
+
+Please note it is currently under active development. Any release versioned
+0.x.y is subject to backwards incompatible changes at any time.
+
+**GA**: Libraries defined at a GA quality level are stable, and will not
+introduce backwards-incompatible changes in any minor or patch releases. We will
+address issues and requests with the highest priority.
+
+**Beta**: Libraries defined at a Beta quality level are expected to be mostly
+stable and we're working towards their release candidate. We will address issues
+and requests with a higher priority.
+
+**Alpha**: Libraries defined at an Alpha quality level are still a
+work-in-progress and are more likely to get backwards-incompatible updates.
+
+## Contributing
+
+Contributions to this library are always welcome and highly encouraged.
+
+See [CONTRIBUTING](CONTRIBUTING.md) for more information on how to get started.
+
+## License
+
+Apache 2.0 - See [LICENSE](LICENSE) for more information.
 
