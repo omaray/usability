@@ -1,5 +1,8 @@
-# PHP Client for Google Cloud Storage
-> Idiomatic PHP client for [Google Cloud Platform](https://cloud.google.com/) services.
+# PHP Client for Google Cloud Storage (Beta)
+Idiomatic PHP client for [Google Cloud Storage](https://cloud.google.com/storage).
+
+- [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/storage/storageclient)
+- [Official Documentation](https://cloud.google.com/storage/docs)
 
 ## Quick Start
 In order to use this library, you first need to go through the following steps:
