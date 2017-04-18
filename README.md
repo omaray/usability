@@ -53,13 +53,12 @@ $ composer require google/cloud
   A [tutorial](https://cloud.google.com/php/getting-started/tutorial-app) that demonstrates how to build a complete web application using Cloud Datastore, Cloud Storage, and Cloud Pub/Sub and deploy it to Google App Engine.
 
 ## Google BigQuery (Beta)
-
-- [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/bigquery/bigqueryclient)
-- [Official Documentation](https://cloud.google.com/bigquery/docs)
+- [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/storage/storageclient)
+- [Official Documentation](https://cloud.google.com/storage/docs)
 
 #### Quick Start
 ```
-$ require google/cloud-bigquery
+$ require google/cloud-storage
 ```
 
 #### Preview
@@ -67,27 +66,22 @@ $ require google/cloud-bigquery
 ```php
 require 'vendor/autoload.php';
 
-use Google\Cloud\BigQuery\BigQueryClient;
+use Google\Cloud\Storage\StorageClient;
 
-$bigQuery = new BigQueryClient([
+$storage = new StorageClient([
     'projectId' => 'my_project'
 ]);
 
-// Get an instance of a previously created table.
-$dataset = $bigQuery->dataset('my_dataset');
-$table = $dataset->table('my_table');
+$bucket = $storage->bucket('my_bucket');
 
-// Begin a job to import data from a CSV file into the table.
-$job = $table->load(
-    fopen('/data/my_data.csv', 'r')
+// Upload a file to the bucket.
+$bucket->upload(
+    fopen('/data/file.txt', 'r')
 );
 
-// Run a query and inspect the results.
-$queryResults = $bigQuery->runQuery('SELECT * FROM [my_project:my_dataset.my_table]');
-
-foreach ($queryResults->rows() as $row) {
-    print_r($row);
-}
+// Download and store an object from the bucket locally.
+$object = $bucket->object('file_backup.txt');
+$object->downloadToFile('/data/file_backup.txt');
 ```
 
 ## Versioning
