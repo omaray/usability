@@ -25,20 +25,20 @@ This client supports the following Google Cloud Platform services at an [Alpha](
 If you need support for other Google APIs, please check out the [Google APIs Client Library for PHP](https://github.com/google/google-api-php-client).
 
 ## Quick Start
-In order to use any of our libraries, you first need to take the following steps:
+In order to use any of our libraries, you first need to go through the following steps:
 
 * [Select or create a Cloud Platform project](https://console.cloud.google.com/project).
 * [Enable billing for your project](https://support.google.com/cloud/answer/6293499#enable-billing).
 * [Enable the API you'll want to use](https://console.cloud.google.com/apis/library) (e.g. Vision API or Datastore API).
 * [Setup Authentication]()
 
-Once these steps are done, we recommend you install the individual packages that you need. For instance, to use the Vision API you need to install the following package:
+Once these steps are done, you can install the package for the API you need. For instance, to use the Cloud Vision API you need to install the following package:
 
 ```sh
 $ composer require google/cloud-vision
 ```
 
-From there, you can then start using the client. Please see lower in this page for code examples to get you started or look at the README of each API in a subfolder of this repo.
+From there, you can then start using the client. Please see lower in this page for code examples to get you started or look at the README of each API located in a subfolder of this repo.
 
 #### The google/cloud meta-package
 We also provide a meta-package, `google/cloud`, which provides access to all of the individual APIs at once:
