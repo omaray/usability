@@ -47,6 +47,12 @@ We also provide a meta-package, `google/cloud`, which provides access to all of 
 $ composer require google/cloud
 ```
 
+## Example Applications
+
+* [getting-started-php](https://github.com/GoogleCloudPlatform/getting-started-php/) -
+  A [quickstart and tutorial](https://cloud.google.com/php/) that demonstrates how to build a complete web 
+  application using Cloud Datastore, Cloud Storage, and Cloud Pub/Sub and deploy it to Google App Engine.
+
 ## Google BigQuery (Beta)
 
 - [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/bigquery/bigqueryclient)
