@@ -41,9 +41,7 @@ $ composer require google/cloud-vision
 From there, you can then start using the client. Please see lower in this page for code examples to get you started or look at the README of each API in a subfolder of this repo.
 
 #### The google/cloud meta-package
-We also provide a meta-package, `google/cloud`, which provides all of the individual APIs. However, in order to keep file size and memory use low, the use of this package is not recommended.
-
-If you want the kitchen sink, however, get it with:
+We also provide a meta-package, `google/cloud`, which provides access to all of the individual APIs at once:
 
 ```sh
 $ composer require google/cloud
