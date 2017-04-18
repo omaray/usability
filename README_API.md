@@ -6,7 +6,7 @@ In order to use this library, you first need to go through the following steps:
 
 * [Select or create a Cloud Platform project](https://console.cloud.google.com/project).
 * [Enable billing for your project](https://support.google.com/cloud/answer/6293499#enable-billing).
-* [Enable the Storage API you'll want to use](https://console.cloud.google.com/apis/library).
+* [Enable the Storage API](https://console.cloud.google.com/apis/library).
 * [Setup Authentication]().
 
 Once these steps are done, you can install the following package:
