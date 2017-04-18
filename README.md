@@ -32,7 +32,7 @@ In order to use any of our libraries, you first need to go through the following
 * [Enable the API you'll want to use](https://console.cloud.google.com/apis/library) (e.g. Vision API or Datastore API).
 * [Setup Authentication]()
 
-Once these steps are done, you can install the package for the API you need. For instance, to use the Cloud Vision API you need to install the following package:
+Once these steps are done, you can install the package for the API you want to use. For instance, to call the Cloud Vision API you need to install the following package:
 
 ```sh
 $ composer require google/cloud-vision
