@@ -1,4 +1,4 @@
-# Cloud PHP Client Library for Cloud Storage
+# PHP Client for Google Cloud Storage
 > Idiomatic PHP client for [Google Cloud Platform](https://cloud.google.com/) services.
 
 ## Quick Start
@@ -40,5 +40,5 @@ $object->downloadToFile('/data/file_backup.txt');
 
 #### Next Steps
 
-* Read the API Reference documentation to see other available methods on the client.
-* Read the official Cloud Storage to learn more about the API and see code examples.
+* Read the [API Reference]() documentation to see other available methods on the client.
+* Read the [Official Cloud Storage]() documentation to learn more about the product and see code examples.
