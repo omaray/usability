@@ -49,6 +49,45 @@ If you want the kitchen sink, however, get it with:
 ```sh
 $ composer require google/cloud
 ```
+
+## Google BigQuery (Beta)
+
+- [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/bigquery/bigqueryclient)
+- [Official Documentation](https://cloud.google.com/bigquery/docs)
+
+#### Quick Start
+```
+$ require google/cloud-bigquery
+```
+
+#### Preview
+
+```php
+require 'vendor/autoload.php';
+
+use Google\Cloud\BigQuery\BigQueryClient;
+
+$bigQuery = new BigQueryClient([
+    'projectId' => 'my_project'
+]);
+
+// Get an instance of a previously created table.
+$dataset = $bigQuery->dataset('my_dataset');
+$table = $dataset->table('my_table');
+
+// Begin a job to import data from a CSV file into the table.
+$job = $table->load(
+    fopen('/data/my_data.csv', 'r')
+);
+
+// Run a query and inspect the results.
+$queryResults = $bigQuery->runQuery('SELECT * FROM [my_project:my_dataset.my_table]');
+
+foreach ($queryResults->rows() as $row) {
+    print_r($row);
+}
+```
+
 ## Versioning
 
 This library follows [Semantic Versioning](http://semver.org/).
