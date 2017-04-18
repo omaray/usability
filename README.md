@@ -52,7 +52,7 @@ $ composer require google/cloud
 * [getting-started-php](https://github.com/GoogleCloudPlatform/getting-started-php/) -
   A [tutorial](https://cloud.google.com/php/getting-started/tutorial-app) that demonstrates how to build a complete web application using Cloud Datastore, Cloud Storage, and Cloud Pub/Sub and deploy it to Google App Engine.
 
-## Google BigQuery (Beta)
+## Google Cloud Storage (Beta)
 - [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/storage/storageclient)
 - [Official Documentation](https://cloud.google.com/storage/docs)
 
