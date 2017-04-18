@@ -41,14 +41,44 @@ $ composer require google/cloud-datastore
 
 From there, you can then start using the client. Please see lower in this page for code examples to get you started.
 
-#### The google/cloud meta-package
-We also provide a meta-package, `google/cloud`, which provides all of the individual APIs. However, in order to keep file size and memory use low, the use of this package is not recommended.
+## Google BigQuery (Beta)
 
-If you want the kitchen sink, however, get it with:
+- [API Documentation](http://googlecloudplatform.github.io/google-cloud-php/#/docs/latest/bigquery/bigqueryclient)
+- [Official Documentation](https://cloud.google.com/bigquery/docs)
 
-```sh
-$ composer require google/cloud
+#### Quick Start
 ```
+$ require google/cloud-bigquery
+```
+
+#### Preview
+
+```php
+require 'vendor/autoload.php';
+
+use Google\Cloud\BigQuery\BigQueryClient;
+
+$bigQuery = new BigQueryClient([
+    'projectId' => 'my_project'
+]);
+
+// Get an instance of a previously created table.
+$dataset = $bigQuery->dataset('my_dataset');
+$table = $dataset->table('my_table');
+
+// Begin a job to import data from a CSV file into the table.
+$job = $table->load(
+    fopen('/data/my_data.csv', 'r')
+);
+
+// Run a query and inspect the results.
+$queryResults = $bigQuery->runQuery('SELECT * FROM [my_project:my_dataset.my_table]');
+
+foreach ($queryResults->rows() as $row) {
+    print_r($row);
+}
+```
+
 ## Versioning
 
 This library follows [Semantic Versioning](http://semver.org/).
