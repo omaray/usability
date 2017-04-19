@@ -12,7 +12,7 @@ In order to use this library, you first need to go through the following steps:
 * [Enable the Storage API](https://console.cloud.google.com/apis/library).
 * [Setup Authentication]().
 
-Once these steps are done, you can install the package.
+Once these steps are done, you can install the package and start using the client.
 
 #### Installation
 
