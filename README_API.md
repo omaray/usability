@@ -46,4 +46,4 @@ $object->downloadToFile('/data/file_backup.txt');
 #### Next Steps
 
 * Read the [API Reference]() documentation to see other available methods on the client.
-* Read the [Official Cloud Storage]() documentation to learn more about the product and see code examples.
+* Read the [Official Cloud Storage]() documentation to learn more about the product and see How-to Guides.
